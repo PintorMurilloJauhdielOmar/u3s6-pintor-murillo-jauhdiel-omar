@@ -1,0 +1,7 @@
+{# method="POST": los datos viajan ocultos dentro de la petición, no en la URL #}
+<form method="POST">
+  {# csrf_token: Django inserta aquí un campo oculto con un token secreto #}
+  {% csrf_token %}
+  {# resto de los campos del formulario #}
+{# cierra el formulario #}
+</form>
